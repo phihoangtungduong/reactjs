@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReactJS</title>
+</head>
+<body>
+    <script>
+    var Student = function(){
+        this.fullname
+        this.age
+        this.address
+        this.email
+
+        this.input = function() {
+            this.fullname = prompt("Nhap ten")
+            this.age = prompt("Nhap tuoi")
+            this.address = prompt("Nhap dia chi")
+            this.email = prompt("Nhap email")
+        }
+        
+        this.display = function() {
+            console.log(`Ten: ${this.fullname}, Tuoi: ${this.age}, Dia chi: ${this.address}, Email: ${this.email}`)
+        }
+    }
+    var stdA = new Student()
+    var stdB = new Student()
+
+    stdA.input()
+    stdA.display()
+
+    stdB.input()
+    stdB.display()
+        
+    
+    
+    
+    </script>
+</body>
+</html>
