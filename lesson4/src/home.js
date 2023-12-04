@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 
-function home() {
+function Home() {
   return (
     <div className="App">
       <button className='btn btn-success'><a  style={{'color':'white'}} href='login'>Login</a></button>
@@ -10,4 +10,4 @@ function home() {
   );
 }
 
-export default home;
+export default Home;

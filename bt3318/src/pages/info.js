@@ -1,10 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from '../logo.svg';
+import '../App.css';
 import React, { useState, useEffect } from 'react';
-import DataMgr from './DataMgr';
+import DataMgr from './DaraMgr';
 
-function List() {
-const [userList, setUserList] = useState([])
+function Info() {
+  const [userList, setUserList] = useState([])
   useEffect(() => {
   	return () => {
   		DataMgr.loadData()
@@ -13,8 +13,7 @@ const [userList, setUserList] = useState([])
   }, [])
   return (
     <>
-        <h1>User List</h1>
-        <div className='container'>
+      <div className='container'>
             <div className='row'>
                 <div className='card'>
                     <div className='card-body'>
@@ -52,4 +51,4 @@ const [userList, setUserList] = useState([])
   );
 }
 
-export default List;
+export default Info;
